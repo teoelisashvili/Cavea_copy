@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCell" customModule="Cavea" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="262" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="262" height="400"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mortal" translatesAutoresizingMaskIntoConstraints="NO" id="zxl-5t-7dT">
+                        <rect key="frame" x="0.0" y="0.0" width="262" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="ioG-iK-3zE"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IVA-3e-Acs">
+                        <rect key="frame" x="0.0" y="140" width="262" height="260"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="მორტალ კომბატიმორტალ კომბატი" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79B-9i-nAv">
+                                <rect key="frame" x="0.0" y="0.0" width="262" height="130"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="კომედია, მძაფრსიუჟეტიანი, კიდე რაღაცა რაღაცა" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGN-Ln-Cps">
+                                <rect key="frame" x="0.0" y="130" width="262" height="130"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.39607843139999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zxl-5t-7dT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="011-Mq-0u2"/>
+                <constraint firstAttribute="bottom" secondItem="IVA-3e-Acs" secondAttribute="bottom" id="C27-j3-HJx"/>
+                <constraint firstAttribute="trailing" secondItem="IVA-3e-Acs" secondAttribute="trailing" id="bGh-ZB-VZL"/>
+                <constraint firstItem="IVA-3e-Acs" firstAttribute="top" secondItem="zxl-5t-7dT" secondAttribute="bottom" id="erv-dz-1ru"/>
+                <constraint firstAttribute="trailing" secondItem="zxl-5t-7dT" secondAttribute="trailing" id="gAr-Jf-KTl"/>
+                <constraint firstItem="IVA-3e-Acs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="o6U-wY-C4W"/>
+                <constraint firstItem="zxl-5t-7dT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wYl-N4-2Rj"/>
+            </constraints>
+            <size key="customSize" width="262" height="400"/>
+            <connections>
+                <outlet property="cellImage" destination="zxl-5t-7dT" id="yYb-JO-tYs"/>
+                <outlet property="cellMovieGenre" destination="qGN-Ln-Cps" id="lNF-Vb-x5Q"/>
+                <outlet property="cellMovieTitle" destination="79B-9i-nAv" id="l72-Du-yua"/>
+            </connections>
+            <point key="canvasLocation" x="207.24637681159422" y="30.133928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mortal" width="809" height="1200"/>
+    </resources>
+</document>
